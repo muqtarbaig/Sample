@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">  
+<struts>  
+
+<package name="defalut" extends="struts-default">
+<action name="employee" class="com.employee.Employee">
+<result name="success">second.jsp</result>
+<result name="failure">first.jsp</result>
+<result name="invalid">first.jsp</result>
+</action>
+
+<action name="logout" class="com.employee.Employee" method="logout">
+<result name="success">logout.jsp</result>
+
+</action>
+
+<action name="login" >
+<result >first.jsp</result>
+
+</action>
+
+</package>
+</struts>
